@@ -16,7 +16,7 @@ app.post('/inc', (req,resp)=>{
 
 app.post('/dec', (req,resp)=>{
 	initNum = initNum -1	
-	resp.send("I am decrementing")
+	resp.send(initNum.toString())
 });
 
 app.post('/die', (req,resp)=>{
